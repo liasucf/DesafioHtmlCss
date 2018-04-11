@@ -1,3 +1,4 @@
+/*Estilização do body */
 body {
 	padding: 0px;
 	position: relative;
@@ -5,6 +6,8 @@ body {
 	margin: auto;
 }
 
+
+/*Estilização da barra de navegação */
 nav{
 	background-color: #201E1A;
 	opacity: 0.8;
@@ -12,13 +15,16 @@ nav{
 	width: 100%;
 	padding-right: 10px;
 	
-
-
 }
+
+
+/*Estilização da logo trainee gti na barra de navegação */
 nav img {
 	margin-top: 15px;
 	padding: 30px;
 }
+
+/*Estilização do menu */
 nav ul {
 	list-style: none;
 	padding: 0px;
@@ -26,6 +32,8 @@ nav ul {
 	right: 0;
 	top: 0;
 }
+
+/*Estilização de cada elemento do menu */
 nav ul li {
 	display: inline-block;
 	float: left;
@@ -45,6 +53,8 @@ nav ul li a:hover{
 	text-decoration: none;
 
 }
+
+/*Estilização da seção  */
 section{
 	background-image: url("../imagens/banner.jpg");
     background-repeat:no-repeat;
@@ -56,16 +66,16 @@ section{
 	background-color: grey;
 	background-blend-mode: multiply;
 }
- 
+
+/*Estilização do div do banner principal  */
+
 #header {
 	text-align: center;
 	margin: 200px 40px 40px 25px;
 	width: 100%;
 	overflow: hidden;
 }
-#header img {
-	align-self: auto;
-}
+/*Estilização do título do banner principal */
 
 h1 {
 	font-family: 'Montserrat',  sans-serif;
@@ -75,12 +85,10 @@ h1 {
 	letter-spacing: 5px;
 	margin-left: 5px;
 	margin-right: 5px;
-
 	
 }
-#icone {
+/*Estilização dos  botões do banner principal */
 
-}
 .botao_banner {
 	color: white;
 	padding: 20px;
@@ -99,12 +107,15 @@ h1 {
 
 }
 
+/*Estilização da div da parte de material */
+
 #material {
 	width: 100%;
 	margin-top: 10px;
 	margin-bottom: 70px;
 
 }
+/*Estilização do título da parte de material */
 #material h1 {
 	color:#F26536;
 	font-size: 35px;
@@ -112,6 +123,8 @@ h1 {
 	margin:0px 0px 0px 70px;
 	text-align: justify;
 }
+
+/*Estilização do texto da parte de material */
 #material p {
 	margin: 30px;
 	padding-left: 40px;
@@ -120,14 +133,19 @@ h1 {
 
 }
 
+/*Estilização da imagem da parte de material */
 #material img{
 	float: left;
 	margin: 40px 50px 30px 50px;
 }
+
+/*Estilização do article que engloba todos os blocos */
 article{
 	text-align: left;
 	width: 100%;
 }
+
+/*Estilização do título da parte dos blocos */
 article h2 {
 	color: #F26548;
 	font-size: 35px;
@@ -136,6 +154,8 @@ article h2 {
 	letter-spacing: 5px;
 	margin-top: 30px;
 }
+
+/*Estilização do cada bloco */
 .todo_box{
 	display: inline-block;
 	margin-left: 20px;
@@ -143,6 +163,8 @@ article h2 {
 	margin-top: 15px;
 
 }
+
+/*Estilização da parte de cima do bloco */
 .box {
 	
 	background-color: #D65B43;
@@ -153,16 +175,22 @@ article h2 {
 	display: block;
 	
 }
+
+/*Estilização da imagem parte de cima do bloco */
 .box img {
 	margin-left: 75px;
 	align-self: center;
 }
+
+/*Estilização do texto da parte de cima do bloco */
 .box p {
 	font-family: 'Montserrat',  sans-serif;
 	font-size: 14px;
 	color: white;
 	padding-left : 15px;
 }
+
+/*Estilização da parte de baixo do bloco */
 .box_baixo{
 	background-color: white;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -172,6 +200,8 @@ article h2 {
 	border = grey;
 }
 
+
+/*Estilização do texto da parte de baixo do bloco */
 .box_baixo p {
 	color: black;
 	font-family: 'Montserrat',  sans-serif;
@@ -179,12 +209,16 @@ article h2 {
 	text-align: center;
 	padding-top: 5px;
 }
+
+/*Estilização da cor do bloco html-css */
 #html-css{
 	background-color: #6DC5EB;
 }
 #html-css img {
 	margin-left: 30px;
 }
+
+/*Estilização da cor do bloco js */
 #js {
 	background-color: #F0C02B;
 }
@@ -193,15 +227,22 @@ article h2 {
 	height: 164px;
 }
 
+/*Estilização da cor do bloco ruby */
 #ruby{
 	background-color: #B21300;
 }
+
+/*Estilização da cor do bloco rails */
 #rails{
 	background-color: #A72D3A;
 }
+
+/*Estilização da cor do bloco rails2 */
 #rails2{
 	background-color: #A72D3A;
 }
+
+/*Estilização da cor do bloco heroku */
 #heroku{
 	background-color: #8A2BFF;
 }
@@ -212,6 +253,8 @@ article h2 {
 p, h2 {
   margin: 0;
 } 
+
+/*Estilização do botão ver */
 .botao_ver {
 	padding: 2px 50px 2px 50px;
 	border: none;
@@ -228,6 +271,7 @@ p, h2 {
 }
 
 
+/*Estilização do botão estudar */
 .botao_estudar {
 	padding: 10px;
 	border: none;
@@ -242,17 +286,20 @@ p, h2 {
 	cursor: pointer;
 }
 
+
+/*Estilização da linha que separa as divs */
 hr {
 	display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     margin-left: auto;
     margin-right: auto;
-    border-style: solid;
-    border-width: 0.25px;
-    border-color: #D3D4D4;
+    border-style: inset;
+    border-width: 1px;
 }
 
+
+/*Estilização do footer */
 footer h2 {
 	color: white;
 	font-family:'Montserrat',  sans-serif;
@@ -264,6 +311,9 @@ footer {
 	opacity: 0.8;
 	padding: 20px;
 }
+
+
+/*Responsividade do site */
 
 @media (max-width: 755px) and (min-width:597px){
 
@@ -305,7 +355,7 @@ footer {
 	}
 
 }
-@media (max-width: 400px){
+@media (max-width: 400px) and (min-width: 345px){
 
 	nav ul li {
 		margin: 30px 0px 30px 0px;
@@ -324,9 +374,65 @@ footer {
 	}
 	.botao_banner {
 		font-size: 18px;
+		margin-bottom: 5px;
 	}
 	#header {
 		margin-left: 0;
 	}
+
+	#material img{
+	margin-left: 20px;
+}
+
+}
+@media (max-width: 345px){
+	nav ul li {
+		margin: 30px 2px 30px 2px;
+		padding: 20px 4px 5px 3px;
+		font-size: 20px;
+
+	}
+	body {
+		padding-right: 60px;
+	}
+	nav {
+		padding-right: 60px;
+	}
+	nav ul {
+		padding-right: 10px;
+	}
+
+	section {
+		padding-right: 60px;
+	}
+	nav img {
+		margin-top: 0px;
+		padding: 15px 10px 60px 100px;
+
+	}
+	h1 {
+		font-size: 35px;
+		padding-left:  20px;
+		margin-left: 10px;
+
+	}
+	.botao_banner {
+		font-size: 18px;
+		margin-bottom: 5px;
+		margin-left: 30px;
+	}
+	#header {
+		margin-left: 0;
+		padding-right: 60px;
+	}
+
+	#material img{
+	margin-left: 20px;
+	}
+ 	footer {
+ 	padding-left: 30px;
+ 	
+ 	width: 100%;
+ 	}
 
 }
