@@ -6,12 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale = 1,maximum-scale=1">
 	<meta name="description" content="Desafio Trainee 2018.1">
 	<meta name="author" content="Gti Engenharia Jr"/>
-
 	<title>Trainee Gti</title>
-
-	 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="imagens/ico.png">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	
       <!--MEU CSS-->
       
       <!-- BIBLIOTECA JQUERY -->
@@ -29,9 +28,10 @@
 </head>
 <body>
 
-	<!-- Criação da navbar e do menu com seus botões  -->
+	<!-- Criação do contador de alerta  -->
+
 	<div id="contador"></div>
-  
+  	<!-- Criação da navbar e do menu com seus botões  -->
 	<section>
 		<nav>
 			<img id="logo" src="imagens/logo.png">
@@ -44,7 +44,9 @@
 			</ul>
 		</nav>
 		
-	<!--Frase incial e seus dois botões -->
+	
+	<!-- Criação da caixa de alerta   -->
+
 	<div id="alerta" hidden="true">
          <div class="title">Receba Nossas Novidades <i class="fa fa-times"></i></div>
          <div class="body">
@@ -52,11 +54,12 @@
                <label>e-mail:</label>
                <input type="text" name="email" placeholder="digite seu email"  id="forms">
                <button type="submit">Enviar</button>
+
             </form>
             <div class="resultado"></div>
          </div>
      </div>
-
+		<!--Frase incial e seus dois botões -->
 		<div id= "header">
 			<h1><img src="imagens/icone-header.png"> APRENDA A <br> DESENVOLVER COM A GTI JR.</h1>
 			<button class="botao_banner" onmouseover="mudarCor(this,'bot')" onmouseout="voltarCor(this,'bot')"><a href="#categoria_html" id="bot">HTML5 + CSS3 + JS</a></button>
@@ -77,6 +80,7 @@
 
 	<!--Parte dos blocos que foram divididos em 3 divs-->
 	<!--Título dessa seção -->
+
 	<article id="categoria_html">
 		<h2>HTML5 | CSS3 | JAVASCRIPT </h2>
 
@@ -84,11 +88,13 @@
 		<div class="todo_box" onmouseover="legenda_box_aparecer('legenda_box')"  onmouseout="legenda_box_desaparecer('legenda_box')">
 			<!--Box da parte de cima com a sua imagem e textos -->
 			<p  id="legenda_box" hidden="true">Estude com a melhor refêrencia</p>
+
 			<div class="box">
 				<img src="imagens/html.png">
 				<p>HTML 5 - Introdução <br>
 				Postado por patrick</p>
 			</div>
+
 			<!--Box branco na parte de baixo e o seu botão -->
 			<div class="box_baixo">
 				<p>Postado dia 04/08/2017</p>
@@ -97,6 +103,7 @@
 		</div>
 		<div class="todo_box" onmouseover="legenda_box_aparecer('legenda_box_2')"  onmouseout="legenda_box_desaparecer('legenda_box_2')">
 			<p  id="legenda_box_2" hidden="true">Aproveite essas opções gratuitas</p>
+
 			<div class="box">
 				<img src="imagens/html.png">
 				<p>Lista de livros<br>
@@ -104,12 +111,14 @@
 			</div>
 			<div class="box_baixo">
 				<p>Postado dia 04/08/2017</p>
+
 				<button class="botao_estudar" onmouseover="botaoEstudar(this)" onmouseout="botaoNormalEstudar(this)">ESTUDAR AGORA</button>
 			</div>
 		</div>
 
 		<div class="todo_box" onmouseover="legenda_box_aparecer('legenda_box_3')"  onmouseout="legenda_box_desaparecer('legenda_box_3')">
 			<p  id="legenda_box_3" hidden="true">Aproveite essas opções gratuitas</p>
+
 			<div class="box" id="html-css">
 				<img src="imagens/html-css.png">
 				<p>HTML 5 - Introdução<br>
@@ -117,11 +126,13 @@
 			</div>
 			<div class="box_baixo">
 				<p>Postado dia 02/04/2018</p>
+
 				<button class="botao_estudar" onmouseover="botaoEstudar(this)" onmouseout="botaoNormalEstudar(this)">ESTUDAR AGORA</button>
 			</div>
 		</div>
 		<div class="todo_box" onmouseover="legenda_box_aparecer('legenda_box_4')"  onmouseout="legenda_box_desaparecer('legenda_box_4')">
 			<p  id="legenda_box_4" hidden="true">Aproveite essas opções gratuitas</p>
+
 			<div class="box" id="js">
 				<img src="imagens/js.png">
 				<p>HTML 5 - Introdução<br>
@@ -129,13 +140,17 @@
 			</div>
 			<div class="box_baixo">
 				<p>Postado dia 02/04/2018</p>
+
 				<button class="botao_estudar" onmouseover="botaoEstudar(this)" onmouseout="botaoNormalEstudar(this)">ESTUDAR AGORA</button>
+
 			</div>
 		</div>	
 		
 		<div  align="center">
 			<br>
+
 			<button class="botao_ver" onmouseover="mudarBotao(this)" onmouseout="voltarBotao(this)" > Ver + </button>
+
 		</div>
 		
 	</article>
@@ -143,10 +158,12 @@
 
 
 	<!--Idea igual aos boxs da parte de cima -->
+
 		<article id="categoria_rails">
 		<h2>Ruby On Rails</h2>
 		<div class="todo_box"  onmouseover="legenda_box_aparecer('legenda_box_5')"  onmouseout="legenda_box_desaparecer('legenda_box_5')">
 			<p  id="legenda_box_5" hidden="true">Estude com a melhor refêrencia</p>
+
 			<div class="box" id="ruby">
 				<img src="imagens/ruby.png">
 				<p>RUBY - Introdução <br>
@@ -154,11 +171,13 @@
 			</div>
 			<div class="box_baixo">
 				<p>Postado dia 02/04/2018</p>
+
 				<button class="botao_estudar" onmouseover="botaoEstudar(this)" onmouseout="botaoNormalEstudar(this)">ESTUDAR AGORA</button>
 			</div>
 		</div>
 		<div class="todo_box"  onmouseover="legenda_box_aparecer('legenda_box_6')"  onmouseout="legenda_box_desaparecer('legenda_box_6')">
 			<p  id="legenda_box_6" hidden="true">Estude com a melhor refêrencia</p>
+
 			<div class="box" id="rails">
 				<img src="imagens/rails.png">
 				<p>RAILS 5 - Introdução<br>
@@ -166,11 +185,13 @@
 			</div>
 			<div class="box_baixo">
 				<p>Postado dia 02/04/2018</p>
+
 				<button class="botao_estudar" onmouseover="botaoEstudar(this)" onmouseout="botaoNormalEstudar(this)">ESTUDAR AGORA</button>
 			</div>
 		</div>
 		<div class="todo_box"  onmouseover="legenda_box_aparecer('legenda_box_7')"  onmouseout="legenda_box_desaparecer('legenda_box_7')">
 			<p  id="legenda_box_7" hidden="true">Estude com a melhor refêrencia</p>
+
 			<div class="box" id="heroku">
 				<img src="imagens/heroku.png">
 				<p>Fazendo deplay no heroku<br>
@@ -178,11 +199,13 @@
 			</div>
 			<div class="box_baixo">
 				<p>Postado dia 02/04/2018</p>
+
 				<button class="botao_estudar" onmouseover="botaoEstudar(this)" onmouseout="botaoNormalEstudar(this)">ESTUDAR AGORA</button>
 			</div>
 		</div>
 		<div class="todo_box"  onmouseover="legenda_box_aparecer('legenda_box_8')"  onmouseout="legenda_box_desaparecer('legenda_box_8')">
 			<p  id="legenda_box_8" hidden="true">Estude com a melhor refêrencia</p>
+
 			<div class="box" id="rails2">
 				<img src="imagens/rails.png">
 				<p>RAILS - GEMS importantes<br>
@@ -190,7 +213,9 @@
 			</div>
 			<div class="box_baixo">
 				<p>Postado dia 02/04/2018</p>
+
 				<button class="botao_estudar" onmouseover="botaoEstudar(this)" onmouseout="botaoNormalEstudar(this)">ESTUDAR AGORA</button>
+
 			</div>
 		</div>	
 		<br>
@@ -198,6 +223,7 @@
 		<!--Botões Ver -->
 		<div  align="center">
 			<br>
+
 			<button class="botao_ver" onmouseover="mudarBotao(this)" onmouseout="voltarBotao(this)"> Ver + </button>
 			<br>
 		</div>
@@ -214,7 +240,7 @@
 </body>
 
 </html>
-	
+
 
 <script>
 	function legenda_box_aparecer(id){

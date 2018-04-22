@@ -38,21 +38,17 @@ nav ul li {
 	display: inline-block;
 	float: left;
 	padding: 30px;
-	
 	font-family: 'Montserrat',  sans-serif;
 	font-size: 18px;
 
 }
- a{
+
+a{
 	color: white;
 	text-decoration: none;
 }
 
-nav ul li a:hover{
-	background-color: #A8A8A8
-	text-decoration: none;
 
-}
 
 /*Estilização da seção  */
 section{
@@ -86,6 +82,7 @@ h1 {
 	margin-left: 5px;
 	margin-right: 5px;
 	cursor: context-menu;
+
 	
 }
 /*Estilização dos  botões do banner principal */
@@ -103,10 +100,6 @@ h1 {
 	margin: auto;
 
 }
-.botao_banner:hover {
-	background-color: gray;
-
-}
 
 /*Estilização da div da parte de material */
 
@@ -121,7 +114,7 @@ h1 {
 	color:#F26536;
 	font-size: 35px;
 	font-family:'Montserrat',  sans-serif;
-	margin:0px 0px 0px 70px;
+	margin-left: 70px;
 	text-align: justify;
 }
 
@@ -164,6 +157,7 @@ article h2 {
 	margin-top: 15px;
 	border: 2px solid grey;
 
+
 }
 
 /*Estilização da parte de cima do bloco */
@@ -173,6 +167,7 @@ article h2 {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 	height: 210px;
 	width: 290px;
+	
 	display: block;
 	
 }
@@ -198,7 +193,7 @@ article h2 {
 	width: 290px;
 	
 	display: block;
-	border = grey;
+	
 }
 
 
@@ -303,6 +298,7 @@ hr {
 
 /*Estilização do footer */
 footer h2 {
+
 	color:#6F6F6F;
 	font-family:'Montserrat',  sans-serif;
 	font-size: 11px;
@@ -351,6 +347,9 @@ footer img {
     background: #D46D07; 
 }
 
+
+
+
 /*Responsividade do site */
 
 @media (max-width: 755px) and (min-width:597px){
@@ -391,13 +390,27 @@ footer img {
 	#header {
 		margin-left: 0;
 	}
+	
+	footer img {
+		width: 70px;
+	}
+
+	#footer_botao {
+		width: 70px;}
+
+	footer h2 {
+
+		font-size: 11px;
+	}
 
 }
-@media (max-width: 400px) and (min-width: 345px){
+
+@media (max-width: 400px) and (min-width: 354px){
 
 	nav ul li {
 		margin: 30px 0px 30px 0px;
-		padding: 20px 5px 5px 5px;
+		padding: 20px 3px 5px 5px;
+
 		font-size: 20px;
 
 	}
@@ -421,13 +434,30 @@ footer img {
 	#material img{
 	margin-left: 20px;
 }
+	
+	footer img {
+		width: 70px;
+
+	}
+	footer h2{
+		font-size: 9px;
+	}
+	#footer_botao {
+		width: 70px;
+	}
+	#alerta {
+		width: 150px;
+		position:relative;
+	}
 
 }
-@media (max-width: 345px){
+
+@media (max-width: 354px){
 	nav ul li {
-		margin: 30px 2px 30px 2px;
-		padding: 20px 4px 5px 3px;
-		font-size: 20px;
+		margin: 30px 5px 30px 0px;
+		padding: 20px 7px 5px 0px;
+		font-size: 16px;
+	
 
 	}
 	body {
@@ -437,7 +467,9 @@ footer img {
 		padding-right: 60px;
 	}
 	nav ul {
-		padding-right: 10px;
+
+		padding-right: 60px;
+
 	}
 
 	section {
@@ -449,9 +481,11 @@ footer img {
 
 	}
 	h1 {
-		font-size: 35px;
-		padding-left:  20px;
-		margin-left: 10px;
+
+		font-size: 30px;
+		padding-left:  0px;
+		margin-left: 0px;
+
 
 	}
 	.botao_banner {
@@ -465,13 +499,30 @@ footer img {
 	}
 
 	#material img{
-	margin-left: 20px;
+
+	margin-left: 0px;
+	
 	}
  	footer {
- 	padding-left: 30px;
- 	
+ 
  	width: 100%;
  	}
+
+	footer img {
+		width: 60px;
+		height: 55px;
+
+	}
+	footer h2{
+		font-size: 8px;
+	}
+	#footer_botao {
+		width: 60px;
+		height: 50px;
+	}
+	#alerta {
+		width: 150px;
+	}
 
 }
 
@@ -630,5 +681,5 @@ input[type=text]{
 
 }
 
-
+}
 
