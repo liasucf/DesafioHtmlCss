@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale = 1,maximum-scale=1">
+	<meta name="description" content="Desafio Trainee 2018.1">
+	<meta name="author" content="Gti Engenharia Jr"/>
+
+	<title>Trainee Gti</title>
+
+	 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet">
+      <!--MEU CSS-->
+      
+      <!-- BIBLIOTECA JQUERY -->
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <!-- BIBLIOTECA JQUERY UI -->
+      <script src="js/jquery-ui.js"></script>
+      <!-- BIBLIOTECA TOASTR (notificacao personalizada) -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
+      <!--MEU JS-->
+      <script type="text/javascript" src="js/script.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="imagens/ico.png">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Criação da navbar e do menu com seus botões  -->
+	<div id="contador"></div>
+  
+	<section>
+		<nav>
+			<img id="logo" src="imagens/logo.png">
+			<ul>
+				<li onmouseover="mudarCor(this,  'Início')"  onmouseout="voltarCor(this,'Início' )"><a href="" id="Início">Início</a></li>
+				<li onmouseover="mudarCor(this,'Categorias')" onmouseout="voltarCor(this, 'Categorias')"><a href="" id="Categorias" >Categorias</a></li>
+				<li onmouseover="mudarCor(this, 'Blog')" onmouseout="voltarCor(this, 'Blog')"><a href="" id="Blog">Blog</a></li>
+				<li onmouseover="mudarCor(this, 'Membros')" onmouseout="voltarCor(this,'Membros')"
+				><a href="" id="Membros" >Membros</a></li>
+			</ul>
+		</nav>
+		
+	<!--Frase incial e seus dois botões -->
+	<div id="alerta" hidden="true">
+         <div class="title">Receba Nossas Novidades <i class="fa fa-times"></i></div>
+         <div class="body">
+            <form id="novidadesform" name="contact-form" method="POST" >
+               <label>e-mail:</label>
+               <input type="text" name="email" placeholder="digite seu email"  id="forms">
+               <button type="submit">Enviar</button>
+            </form>
+            <div class="resultado"></div>
+         </div>
+     </div>
+
+		<div id= "header">
+			<h1><img src="imagens/icone-header.png"> APRENDA A <br> DESENVOLVER COM A GTI JR.</h1>
+			<button class="botao_banner" onmouseover="mudarCor(this,'bot')" onmouseout="voltarCor(this,'bot')"><a href="#categoria_html" id="bot">HTML5 + CSS3 + JS</a></button>
+			<button class="botao_banner" onmouseover="mudarCor(this,'bot2')" onmouseout="voltarCor(this,'bot2')"><a href="#categoria_rails" id="bot2">Ruby On Rails</a></button>	
+		</div>
+	</section>
+
+	<!-- Imagem a o título do material e um pequeno texto -->
+
+	<div id="material">
+		<img src="imagens/pcs.png">
+		<h1><br>MATERIAL TRAINEE 2018<br></h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla purus libero, quis accumsan ipsum vestibulum non. Nulla tellus felis, congue vel odio eget, finibus placerat nisi. Nulla facilisi. Mauris eu luctus justo. Praesent nec nunc id arcu pretium malesuada. Etiam est orci, sagittis id mi ut, dignissim porta lorem. Etiam ipsum tortor, ullamcorper vitae tortor sit amet, porttitor laoreet tortor. Suspendisse lacinia sit amet ipsum ut elementum. Integer porttitor auctor tellus. </p>
+	</div>
+
+	<!-- linha para separar as seções -->
+	<hr>
+
+	<!--Parte dos blocos que foram divididos em 3 divs-->
+	<!--Título dessa seção -->
+	<article id="categoria_html">
+		<h2>HTML5 | CSS3 | JAVASCRIPT </h2>
+
+		<!--Box que engloba todo o bloco -->
+		<div class="todo_box" onmouseover="legenda_box_aparecer('legenda_box')"  onmouseout="legenda_box_desaparecer('legenda_box')">
+			<!--Box da parte de cima com a sua imagem e textos -->
+			<p  id="legenda_box" hidden="true">Estude com a melhor refêrencia</p>
+			<div class="box">
+				<img src="imagens/html.png">
+				<p>HTML 5 - Introdução <br>
+				Postado por patrick</p>
+			</div>
+			<!--Box branco na parte de baixo e o seu botão -->
+			<div class="box_baixo">
+				<p>Postado dia 04/08/2017</p>
+				<button class="botao_estudar" onmouseover="botaoEstudar(this)" onmouseout="botaoNormalEstudar(this)">ESTUDAR AGORA</button>
+			</div>
+		</div>
+		<div class="todo_box" onmouseover="legenda_box_aparecer('legenda_box_2')"  onmouseout="legenda_box_desaparecer('legenda_box_2')">
+			<p  id="legenda_box_2" hidden="true">Aproveite essas opções gratuitas</p>
+			<div class="box">
+				<img src="imagens/html.png">
+				<p>Lista de livros<br>
+				Postado por rayane</p>
+			</div>
+			<div class="box_baixo">
+				<p>Postado dia 04/08/2017</p>
+				<button class="botao_estudar" onmouseover="botaoEstudar(this)" onmouseout="botaoNormalEstudar(this)">ESTUDAR AGORA</button>
+			</div>
+		</div>
+
+		<div class="todo_box" onmouseover="legenda_box_aparecer('legenda_box_3')"  onmouseout="legenda_box_desaparecer('legenda_box_3')">
+			<p  id="legenda_box_3" hidden="true">Aproveite essas opções gratuitas</p>
+			<div class="box" id="html-css">
+				<img src="imagens/html-css.png">
+				<p>HTML 5 - Introdução<br>
+				Postado por patrick</p>
+			</div>
+			<div class="box_baixo">
+				<p>Postado dia 02/04/2018</p>
+				<button class="botao_estudar" onmouseover="botaoEstudar(this)" onmouseout="botaoNormalEstudar(this)">ESTUDAR AGORA</button>
+			</div>
+		</div>
+		<div class="todo_box" onmouseover="legenda_box_aparecer('legenda_box_4')"  onmouseout="legenda_box_desaparecer('legenda_box_4')">
+			<p  id="legenda_box_4" hidden="true">Aproveite essas opções gratuitas</p>
+			<div class="box" id="js">
+				<img src="imagens/js.png">
+				<p>HTML 5 - Introdução<br>
+				Postado por patrick</p>
+			</div>
+			<div class="box_baixo">
+				<p>Postado dia 02/04/2018</p>
+				<button class="botao_estudar" onmouseover="botaoEstudar(this)" onmouseout="botaoNormalEstudar(this)">ESTUDAR AGORA</button>
+			</div>
+		</div>	
+		
+		<div  align="center">
+			<br>
+			<button class="botao_ver" onmouseover="mudarBotao(this)" onmouseout="voltarBotao(this)" > Ver + </button>
+		</div>
+		
+	</article>
+	<hr>
+
+
+	<!--Idea igual aos boxs da parte de cima -->
+		<article id="categoria_rails">
+		<h2>Ruby On Rails</h2>
+		<div class="todo_box"  onmouseover="legenda_box_aparecer('legenda_box_5')"  onmouseout="legenda_box_desaparecer('legenda_box_5')">
+			<p  id="legenda_box_5" hidden="true">Estude com a melhor refêrencia</p>
+			<div class="box" id="ruby">
+				<img src="imagens/ruby.png">
+				<p>RUBY - Introdução <br>
+				Postado por Lucas Noleto</p>
+			</div>
+			<div class="box_baixo">
+				<p>Postado dia 02/04/2018</p>
+				<button class="botao_estudar" onmouseover="botaoEstudar(this)" onmouseout="botaoNormalEstudar(this)">ESTUDAR AGORA</button>
+			</div>
+		</div>
+		<div class="todo_box"  onmouseover="legenda_box_aparecer('legenda_box_6')"  onmouseout="legenda_box_desaparecer('legenda_box_6')">
+			<p  id="legenda_box_6" hidden="true">Estude com a melhor refêrencia</p>
+			<div class="box" id="rails">
+				<img src="imagens/rails.png">
+				<p>RAILS 5 - Introdução<br>
+				Postado por Patrick</p>
+			</div>
+			<div class="box_baixo">
+				<p>Postado dia 02/04/2018</p>
+				<button class="botao_estudar" onmouseover="botaoEstudar(this)" onmouseout="botaoNormalEstudar(this)">ESTUDAR AGORA</button>
+			</div>
+		</div>
+		<div class="todo_box"  onmouseover="legenda_box_aparecer('legenda_box_7')"  onmouseout="legenda_box_desaparecer('legenda_box_7')">
+			<p  id="legenda_box_7" hidden="true">Estude com a melhor refêrencia</p>
+			<div class="box" id="heroku">
+				<img src="imagens/heroku.png">
+				<p>Fazendo deplay no heroku<br>
+				Postado por Eduardo</p>
+			</div>
+			<div class="box_baixo">
+				<p>Postado dia 02/04/2018</p>
+				<button class="botao_estudar" onmouseover="botaoEstudar(this)" onmouseout="botaoNormalEstudar(this)">ESTUDAR AGORA</button>
+			</div>
+		</div>
+		<div class="todo_box"  onmouseover="legenda_box_aparecer('legenda_box_8')"  onmouseout="legenda_box_desaparecer('legenda_box_8')">
+			<p  id="legenda_box_8" hidden="true">Estude com a melhor refêrencia</p>
+			<div class="box" id="rails2">
+				<img src="imagens/rails.png">
+				<p>RAILS - GEMS importantes<br>
+				Postado por Gilvan</p>
+			</div>
+			<div class="box_baixo">
+				<p>Postado dia 02/04/2018</p>
+				<button class="botao_estudar" onmouseover="botaoEstudar(this)" onmouseout="botaoNormalEstudar(this)">ESTUDAR AGORA</button>
+			</div>
+		</div>	
+		<br>
+
+		<!--Botões Ver -->
+		<div  align="center">
+			<br>
+			<button class="botao_ver" onmouseover="mudarBotao(this)" onmouseout="voltarBotao(this)"> Ver + </button>
+			<br>
+		</div>
+	</article>
+	
+	<!--Rodapé com seu texto-->
+	<footer>
+		<a href="https://www.instagram.com/gtijr/"  target="_blank"><img src="imagens/butao.png">
+		<a href="https://pt-br.facebook.com/gti.ufc/"  target="_blank" ><img src="imagens/botao.png" id="footer_botao"></a>
+		<h2 ><a href="http://www.gti.ufc.br/"   target="_blank" id="h2_footer" >© Gti Engenharia Junior <br> Desenvolvido por Lia Sucupira</a></h2>
+	</footer>
+
+
+</body>
+
+</html>
+	
+
+<script>
+	function legenda_box_aparecer(id){
+		document.getElementById(id).style.display="block";
+		
+	}
+	function legenda_box_desaparecer(id){
+		document.getElementById(id).style.display="none";
+	}
+	function mudarCor(id, ID){
+		id.style.backgroundColor="white";
+		id.style.opacity= 1;
+		document.getElementById(ID).style.color="#D46D07";
+	}
+	function voltarCor(id,ID){
+		id.style.backgroundColor="transparent";
+		document.getElementById(ID).style.color = "white";
+		
+	}
+
+	function  mudarBotao(id){
+		id.style.color = "#D46D07";
+	}
+	function  voltarBotao(id){
+		id.style.color = "white";
+	}
+	function  botaoEstudar(id){
+		id.style.boxShadow = "0px 13px 40px grey";
+	};
+	function  botaoNormalEstudar(id){
+		id.style.boxShadow = "none";
+	};
+
+
+
+	$('button a').click(function(e){
+		e.preventDefault();
+		var id= $(this).attr('href');
+		targetOffset = $(id).offset().top;
+
+		$('html,body').animate({
+			scrollTop:targetOffset}, 600);
+		});
+
+	$("logo").click(function(){
+    $("logo").animate({
+        height: 'toggle'
+    });
+    }); 
+
+
+	$('.fa').click(function(event){
+		$('#alerta').hide();
+
+	});
+	$('.fa').mouseover(function(event){
+		$('.fa').css("cursor", "pointer");
+	});
+	$('footer a').mouseover(function(event){
+		$('footer h2 a').css("color", "#D46D07");
+	});
+	$('footer a').mouseout(function(event){
+		$('footer h2 a').css("color", "white");
+	});
+	
+
+
+
+</script>

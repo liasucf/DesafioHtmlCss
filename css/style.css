@@ -1,0 +1,634 @@
+/*Estilização do body */
+body {
+	padding: 0px;
+	position: relative;
+	width: 100%;
+	margin: auto;
+}
+
+
+/*Estilização da barra de navegação */
+nav{
+	background-color: #201E1A;
+	opacity: 0.8;
+	display: block;
+	width: 100%;
+	padding-right: 10px;
+	
+}
+
+
+/*Estilização da logo trainee gti na barra de navegação */
+nav img {
+	margin-top: 15px;
+	padding: 30px;
+}
+
+/*Estilização do menu */
+nav ul {
+	list-style: none;
+	padding: 0px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/*Estilização de cada elemento do menu */
+nav ul li {
+	display: inline-block;
+	float: left;
+	padding: 30px;
+	
+	font-family: 'Montserrat',  sans-serif;
+	font-size: 18px;
+
+}
+ a{
+	color: white;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	background-color: #A8A8A8
+	text-decoration: none;
+
+}
+
+/*Estilização da seção  */
+section{
+	background-image: url("../imagens/banner.jpg");
+    background-repeat:no-repeat;
+    height: 900px;
+    overflow: hidden;
+   	background-size: cover;
+   	width: 100%;
+	padding-right:  10px;
+	background-color: grey;
+	background-blend-mode: multiply;
+}
+
+/*Estilização do div do banner principal  */
+
+#header {
+	text-align: center;
+	margin: 200px 40px 40px 25px;
+	width: 100%;
+	overflow: hidden;
+}
+/*Estilização do título do banner principal */
+
+h1 {
+	font-family: 'Montserrat',  sans-serif;
+	font-size: 52px;
+	color: white;
+	text-align: center;
+	letter-spacing: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	cursor: context-menu;
+	
+}
+/*Estilização dos  botões do banner principal */
+
+.botao_banner {
+	color: white;
+	padding: 20px;
+	text-align: center;
+	font-family: 'Montserrat',  sans-serif;
+	font-size: 25px;
+	text-decoration: none;
+	border: 2px solid white;
+	cursor: pointer;
+	background-color: transparent;
+	margin: auto;
+
+}
+.botao_banner:hover {
+	background-color: gray;
+
+}
+
+/*Estilização da div da parte de material */
+
+#material {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 70px;
+
+}
+/*Estilização do título da parte de material */
+#material h1 {
+	color:#F26536;
+	font-size: 35px;
+	font-family:'Montserrat',  sans-serif;
+	margin:0px 0px 0px 70px;
+	text-align: justify;
+}
+
+/*Estilização do texto da parte de material */
+#material p {
+	margin: 30px;
+	padding-left: 40px;
+	font-family:'Montserrat',  sans-serif;
+	font-size: 15px;
+
+}
+
+/*Estilização da imagem da parte de material */
+#material img{
+	float: left;
+	margin: 40px 50px 30px 50px;
+}
+
+/*Estilização do article que engloba todos os blocos */
+article{
+	text-align: left;
+	width: 100%;
+}
+
+/*Estilização do título da parte dos blocos */
+article h2 {
+	color: #F26548;
+	font-size: 35px;
+	font-family:'Montserrat',  sans-serif;
+	text-align: center;
+	letter-spacing: 5px;
+	margin-top: 30px;
+}
+
+/*Estilização do cada bloco */
+.todo_box{
+	display: inline-block;
+	margin-left: 17px;
+	-webkit-filter: drop-shadow(8px 8px 10px grey);filter: drop-shadow(8px 8px 10px grey);
+	margin-top: 15px;
+	border: 2px solid grey;
+
+}
+
+/*Estilização da parte de cima do bloco */
+.box {
+	
+	background-color: #D65B43;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	height: 210px;
+	width: 290px;
+	display: block;
+	
+}
+
+/*Estilização da imagem parte de cima do bloco */
+.box img {
+	margin-left: 75px;
+	align-self: center;
+}
+
+/*Estilização do texto da parte de cima do bloco */
+.box p {
+	font-family: 'Montserrat',  sans-serif;
+	font-size: 14px;
+	color: white;
+	padding-left : 15px;
+}
+
+/*Estilização da parte de baixo do bloco */
+.box_baixo{
+	background-color: white;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	width: 290px;
+	
+	display: block;
+	border = grey;
+}
+
+
+/*Estilização do texto da parte de baixo do bloco */
+.box_baixo p {
+	color: black;
+	font-family: 'Montserrat',  sans-serif;
+	font-size: 16px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+/*Estilização da cor do bloco html-css */
+#html-css{
+	background-color: #6DC5EB;
+}
+#html-css img {
+	margin-left: 30px;
+}
+
+/*Estilização da cor do bloco js */
+#js {
+	background-color: #F0C02B;
+}
+
+#js img  {
+	height: 164px;
+}
+
+/*Estilização da cor do bloco ruby */
+#ruby{
+	background-color: #B21300;
+}
+
+/*Estilização da cor do bloco rails */
+#rails{
+	background-color: #A72D3A;
+}
+
+/*Estilização da cor do bloco rails2 */
+#rails2{
+	background-color: #A72D3A;
+}
+
+/*Estilização da cor do bloco heroku */
+#heroku{
+	background-color: #8A2BFF;
+}
+
+
+
+
+p, h2 {
+  margin: 0;
+  cursor: context-menu;
+} 
+
+/*Estilização do botão ver */
+.botao_ver {
+	padding: 2px 50px 2px 50px;
+	border: none;
+	background-color: black;
+	border-radius: 7px;
+	font-size: 25px;
+	color: white;
+	text-align: center;
+	font-family:'Montserrat',  sans-serif;
+	letter-spacing: 3px;
+	cursor: pointer;
+	margin-bottom: 10px;
+	
+}
+
+
+/*Estilização do botão estudar */
+.botao_estudar {
+	padding: 10px;
+	border: none;
+	margin: 10px 0px 20px 45px;
+	background-color: #FF7F00;
+	border-radius: 7px;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	font-family:'Montserrat',  sans-serif;
+	letter-spacing: 3px;
+	cursor: pointer;
+}
+
+
+/*Estilização da linha que separa as divs */
+hr {
+	display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+/*Estilização do footer */
+footer h2 {
+	color:#6F6F6F;
+	font-family:'Montserrat',  sans-serif;
+	font-size: 11px;
+	float: right;
+	padding-top: 15px;
+	letter-spacing: 2px;
+
+
+}
+footer {
+	background-color: #2F2E2E;	
+	padding: 10px;
+	height: 60px;
+}
+footer img {
+	width: 90px;
+	height: 70px;
+	filter: grayscale(90%);
+	float: left;
+}
+#footer_botao {
+	width: 95px;
+	height: 60px;
+	padding-top:  5px;
+	filter: grayscale(90%);
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #D46D07; 
+}
+
+/*Responsividade do site */
+
+@media (max-width: 755px) and (min-width:597px){
+
+	nav ul li {
+		font-size:20px;
+		padding: 5px;
+		margin: 30px 5px 15px 5px;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	.botao_banner {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 597px) and (min-width: 400px) {
+	
+	nav ul li {
+		margin: 30px 0px 30px 0px;
+		padding: 5px 10px 5px 10px;
+		font-size: 20px;
+
+	}
+	nav img {
+		margin-top: 0px;
+		padding: 8px 0px 60px 150px;
+
+	}
+	h1 {
+		font-size: 35px;
+
+	}
+	.botao_banner {
+		font-size: 18px;
+	}
+	#header {
+		margin-left: 0;
+	}
+
+}
+@media (max-width: 400px) and (min-width: 345px){
+
+	nav ul li {
+		margin: 30px 0px 30px 0px;
+		padding: 20px 5px 5px 5px;
+		font-size: 20px;
+
+	}
+	nav img {
+		margin-top: 0px;
+		padding: 15px 10px 60px 100px;
+
+	}
+	h1 {
+		font-size: 35px;
+
+	}
+	.botao_banner {
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+	#header {
+		margin-left: 0;
+	}
+
+	#material img{
+	margin-left: 20px;
+}
+
+}
+@media (max-width: 345px){
+	nav ul li {
+		margin: 30px 2px 30px 2px;
+		padding: 20px 4px 5px 3px;
+		font-size: 20px;
+
+	}
+	body {
+		padding-right: 60px;
+	}
+	nav {
+		padding-right: 60px;
+	}
+	nav ul {
+		padding-right: 10px;
+	}
+
+	section {
+		padding-right: 60px;
+	}
+	nav img {
+		margin-top: 0px;
+		padding: 15px 10px 60px 100px;
+
+	}
+	h1 {
+		font-size: 35px;
+		padding-left:  20px;
+		margin-left: 10px;
+
+	}
+	.botao_banner {
+		font-size: 18px;
+		margin-bottom: 5px;
+		margin-left: 30px;
+	}
+	#header {
+		margin-left: 0;
+		padding-right: 60px;
+	}
+
+	#material img{
+	margin-left: 20px;
+	}
+ 	footer {
+ 	padding-left: 30px;
+ 	
+ 	width: 100%;
+ 	}
+
+}
+
+body{
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#alerta {
+	width: 400px;
+	background-color: #eddfdf;
+	border: 1px solid #ccc;
+	margin: 40px auto;
+	cursor: context-menu;
+	position: fixed;
+	left: calc(50% - 200px);
+	z-index: 2;
+
+}
+
+#alerta .title{
+	background-color: #329596;
+	height: 30px;
+	border-bottom: 1px solid #227374;
+	text-transform: uppercase;
+	padding: 10px 10px 0px 0px;
+	text-align: center;
+	color: #073c3d;
+	text-shadow: 1px 1px 1px #6fabac;
+}
+
+#alerta .title i{
+	float: right;
+	padding-top: 3px;
+}
+
+#alerta .body{
+	padding: 10px;
+}
+
+form button{
+	display: block;
+	padding: 4px 11px;
+	border: 1px solid #ffcc00;
+	background-color: #ffcc00 !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffcc00), color-stop(100%,#ff6600)) !important;
+	background: -webkit-linear-gradient(top, #ffcc00, #ff6600) !important;
+	background: -moz-linear-gradient(top, #ffcc00, #ff6600) !important;
+	background: -ms-linear-gradient(top, #ffcc00, #ff6600) !important;
+	background: -o-linear-gradient(top, #ffcc00, #ff6600) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#ff6600',GradientType=0 );
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 1px 0 #666;
+	cursor:pointer;
+	position: relative;
+	margin: 10px auto;
+}
+
+input[type=text]{   
+    height: 34px;
+    width: 315px;
+    padding: 2px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+#alerta .resultado{
+	color: #227210;
+	font-size: 12px;
+}
+
+
+#contador {
+	color: #227210;
+	text-align: center;
+	height: 20px;
+
+}
+
+
+#legenda_box {
+	color: white;
+	position: relative;
+	background-color:  #D65B43;
+	font-size: 16px;
+	padding-left: 20px;
+
+}
+
+#legenda_box_2 {
+	color: white;
+	position: relative;
+	background-color:  #D65B43;
+	font-size: 16px;
+	padding-left: 20px;
+
+}
+
+#legenda_box_3 {
+	color: white;
+	position: relative;
+	background-color:  #6DC5EB;;
+	font-size: 16px;
+	padding-left: 20px;
+
+}
+#legenda_box_4 {
+	color: white;
+	position: relative;
+	background-color:  #F0C02B;
+	font-size: 16px;
+	padding-left: 20px;
+
+}
+#legenda_box_5 {
+	color: white;
+	position: relative;
+	background-color: #B21300;
+	font-size: 16px;
+	padding-left: 20px;
+
+}
+#legenda_box_6 {
+	color: white;
+	position: relative;
+	background-color:  #A72D3A;
+	font-size: 16px;
+	padding-left: 20px;
+
+}
+#legenda_box_7 {
+	color: white;
+	position: relative;
+	background-color:  #8A2BFF;
+	font-size: 16px;
+	padding-left: 20px;
+
+}
+#legenda_box_8 {
+	color: white;
+	position: relative;
+	background-color: #A72D3A ;
+	font-size: 16px;
+	padding-left: 20px;
+
+}
+
+
+
