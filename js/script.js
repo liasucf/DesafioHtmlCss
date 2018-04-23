@@ -33,7 +33,7 @@ $(document).ready(function() {
                     success: function(retorno){
                     toastr.success(retorno, 'Success');
                     $(".resultado").text(element + " foi salvo em nossa lista de novidades =)");
-                    element="";
+                    $("input[type=text][name=email]").val(null);
                     contadorNovo(2);
                     
                     
